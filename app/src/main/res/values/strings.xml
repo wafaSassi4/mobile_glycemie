@@ -4,10 +4,6 @@
     <string name="age">Votre age :</string>
     <string name="jeuner">Est-ce-que vous ete jéuner :</string>
     <string name="hint">Valeur mesurée (en mmol/l) </string>
-    <string name="title_activity_cons">ConsActivity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
