@@ -2,7 +2,7 @@
     <string name="app_name">wafasassilsi3_DevMobil_mesure_glycemie</string>
     <string name="titre">Mesure de niveau de glycemie</string>
     <string name="age">Votre age :</string>
-    <string name="jeuner" >Est-ce-que vous ete jéuner :</string>
+    <string name="jeuner">Est-ce-que vous ete jéuner :</string>
     <string name="hint">Valeur mesurée (en mmol/l) </string>
     <string name="title_activity_cons">ConsActivity</string>
     <!-- Strings used for fragments for navigation -->
