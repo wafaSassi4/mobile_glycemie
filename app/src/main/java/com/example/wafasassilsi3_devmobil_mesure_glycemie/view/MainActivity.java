@@ -2,7 +2,6 @@ package com.example.wafasassilsi3_devmobil_mesure_glycemie.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,13 +13,12 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.wafasassilsi3_devmobil_mesure_glycemie.MainActivity2;
 import com.example.wafasassilsi3_devmobil_mesure_glycemie.R;
-import com.example.wafasassilsi3_devmobil_mesure_glycemie.controller.Controller;
+import com.example.wafasassilsi3_devmobil_mesure_glycemie.controller.controller;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView age=null;
+    private TextView age=null,res=null;
     //private TextVien tvage;tvresult;
     private SeekBar sbage =null;
     //private SeekBar sbage;
@@ -29,9 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText vm=null;
     private Button btn= null;
 
-    private String res;
-
-    private static Controller myController= Controller.getInstance();
+    private static controller myController = new controller();
     @Override
     //public void main
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,10 +77,8 @@ public class MainActivity extends AppCompatActivity {
 
                     myController.createPatient(vM,age,isFasting);
 
-                    res=myController.getResponse();
+                    res.setText(myController.getResponse());
                 }
-
-                resultat();
             }
         });
 
@@ -98,17 +92,7 @@ public class MainActivity extends AppCompatActivity {
        // rbGrp=(RadioGroup) findViewById(R.id.rbGrp);
         rbnon=(RadioButton)findViewById(R.id.rbNon);
         rboui=(RadioButton)findViewById(R.id.rbOui);
-    }
-
-    public void resultat() {
-        // Créer une intention pour démarrer l'activité Consultation_Activity
-        Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-
-        // Transmettre la valeur de 'res' à Consultation_Activity
-        intent.putExtra("resultat", res);
-
-        // Démarrer l'activité Consultation_Activity
-        startActivity(intent);
+        res= (TextView) findViewById(R.id.res);
     }
 
 
