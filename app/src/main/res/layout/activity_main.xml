@@ -97,14 +97,4 @@
         android:background="@drawable/button_shape"
         />
 
-    <TextView
-        android:id="@+id/res"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:textColor="@color/red"
-        android:text="..."
-        android:textStyle="bold"
-        android:layout_marginTop="30dp"
-        android:gravity="center"/>
 </LinearLayout>
