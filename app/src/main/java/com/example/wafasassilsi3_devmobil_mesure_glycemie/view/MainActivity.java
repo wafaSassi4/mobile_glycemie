@@ -14,7 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.wafasassilsi3_devmobil_mesure_glycemie.R;
-import com.example.wafasassilsi3_devmobil_mesure_glycemie.controller.controller;
+import com.example.wafasassilsi3_devmobil_mesure_glycemie.controller.Controller;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText vm=null;
     private Button btn= null;
 
-    private static controller myController = new controller();
+    private static Controller myController= Controller.getInstance();
     @Override
     //public void main
     protected void onCreate(Bundle savedInstanceState) {
