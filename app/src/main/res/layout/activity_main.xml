@@ -7,9 +7,7 @@
     android:background="@drawable/app_background"
     android:layout_width="match_parent"
     android:padding="20dp"
-
-
-
+    tools:context=".view.MainActivity"
     >
 
     <TextView
@@ -97,7 +95,6 @@
         android:layout_marginTop="30dp"
         android:textColor="@color/white"
         android:background="@drawable/button_shape"
-        android:onClick="calculer"
         />
 
     <TextView
