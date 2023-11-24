@@ -11,7 +11,7 @@ import com.example.wafasassilsi3_devmobil_mesure_glycemie.view.MainActivity;
 
 public class MainActivity2 extends AppCompatActivity {
 
-    private TextView resultTextView;
+    private TextView resultTextView=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class MainActivity2 extends AppCompatActivity {
         Intent intent = getIntent();
         String result = null;
         if (intent != null) {
-            result = intent.getStringExtra("resultat");
+            result = intent.getStringExtra("result");
             resultTextView.setText(result);
         }
         Button dev = findViewById(R.id.btn);
